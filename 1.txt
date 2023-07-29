@@ -1,0 +1,580 @@
+wire    [IndexWidth-1 : 0]                  pattern_reg;
+reg    [IndexWidth-1 : 0]                  pattern_reg0;
+reg    [IndexWidth-1 : 0]                  pattern_reg1;
+wire    [DataWidth-1 : 0]                   value0_reg;
+wire    [DataWidth-1 : 0]                   value1_reg;
+wire    [DataWidth-1 : 0]                   value2_reg;
+wire    [DataWidth-1 : 0]                   value3_reg;
+wire    [DataWidth-1 : 0]                   value4_reg;
+wire    [DataWidth-1 : 0]                   value5_reg;
+wire    [DataWidth-1 : 0]                   value6_reg;
+wire    [DataWidth-1 : 0]                   value7_reg;
+wire    [DataWidth-1 : 0]                   value8_reg;
+wire    [DataWidth-1 : 0]                   value9_reg;
+wire    [DataWidth-1 : 0]                   value10_reg;
+wire    [DataWidth-1 : 0]                   value11_reg;
+wire    [DataWidth-1 : 0]                   value12_reg;
+wire    [DataWidth-1 : 0]                   value13_reg;
+wire    [DataWidth-1 : 0]                   value14_reg;
+wire    [DataWidth-1 : 0]                   value15_reg;
+
+
+
+reg    [DataWidth-1 : 0]                   value0_reg0;
+reg    [DataWidth-1 : 0]                   value1_reg0;
+reg    [DataWidth-1 : 0]                   value2_reg0;
+reg    [DataWidth-1 : 0]                   value3_reg0;
+reg    [DataWidth-1 : 0]                   value4_reg0;
+reg    [DataWidth-1 : 0]                   value5_reg0;
+reg    [DataWidth-1 : 0]                   value6_reg0;
+reg    [DataWidth-1 : 0]                   value7_reg0;
+reg    [DataWidth-1 : 0]                   value8_reg0;
+reg    [DataWidth-1 : 0]                   value9_reg0;
+reg    [DataWidth-1 : 0]                   value10_reg0;
+reg    [DataWidth-1 : 0]                   value11_reg0;
+reg    [DataWidth-1 : 0]                   value12_reg0;
+reg    [DataWidth-1 : 0]                   value13_reg0;
+reg    [DataWidth-1 : 0]                   value14_reg0;
+reg    [DataWidth-1 : 0]                   value15_reg0;
+
+
+
+reg    [DataWidth-1 : 0]                   value0_reg1;
+reg    [DataWidth-1 : 0]                   value1_reg1;
+reg    [DataWidth-1 : 0]                   value2_reg1;
+reg    [DataWidth-1 : 0]                   value3_reg1;
+reg    [DataWidth-1 : 0]                   value4_reg1;
+reg    [DataWidth-1 : 0]                   value5_reg1;
+reg    [DataWidth-1 : 0]                   value6_reg1;
+reg    [DataWidth-1 : 0]                   value7_reg1;
+reg    [DataWidth-1 : 0]                   value8_reg1;
+reg    [DataWidth-1 : 0]                   value9_reg1;
+reg    [DataWidth-1 : 0]                   value10_reg1;
+reg    [DataWidth-1 : 0]                   value11_reg1;
+reg    [DataWidth-1 : 0]                   value12_reg1;
+reg    [DataWidth-1 : 0]                   value13_reg1;
+reg    [DataWidth-1 : 0]                   value14_reg1;
+reg    [DataWidth-1 : 0]                   value15_reg1;
+
+
+
+reg     [DataWidth-1 : 0]                   A_0_reg;
+reg     [DataWidth-1 : 0]                   B_0_reg;
+reg     [DataWidth-1 : 0]                   A_1_reg;
+reg     [DataWidth-1 : 0]                   B_1_reg;
+reg     [DataWidth-1 : 0]                   A_2_reg;
+reg     [DataWidth-1 : 0]                   B_2_reg;
+reg     [DataWidth-1 : 0]                   A_3_reg;
+reg     [DataWidth-1 : 0]                   B_3_reg;
+reg     [DataWidth-1 : 0]                   A_4_reg;
+reg     [DataWidth-1 : 0]                   B_4_reg;
+reg     [DataWidth-1 : 0]                   A_5_reg;
+reg     [DataWidth-1 : 0]                   B_5_reg;
+reg     [DataWidth-1 : 0]                   A_6_reg;
+reg     [DataWidth-1 : 0]                   B_6_reg;
+reg     [DataWidth-1 : 0]                   A_7_reg;
+reg     [DataWidth-1 : 0]                   B_7_reg;
+reg     [DataWidth-1 : 0]                   A_8_reg;
+reg     [DataWidth-1 : 0]                   B_8_reg;
+reg     [DataWidth-1 : 0]                   A_9_reg;
+reg     [DataWidth-1 : 0]                   B_9_reg;
+reg     [DataWidth-1 : 0]                   A_10_reg;
+reg     [DataWidth-1 : 0]                   B_10_reg;
+reg     [DataWidth-1 : 0]                   A_11_reg;
+reg     [DataWidth-1 : 0]                   B_11_reg;
+reg     [DataWidth-1 : 0]                   A_12_reg;
+reg     [DataWidth-1 : 0]                   B_12_reg;
+reg     [DataWidth-1 : 0]                   A_13_reg;
+reg     [DataWidth-1 : 0]                   B_13_reg;
+reg     [DataWidth-1 : 0]                   A_14_reg;
+reg     [DataWidth-1 : 0]                   B_14_reg;
+reg     [DataWidth-1 : 0]                   A_15_reg;
+reg     [DataWidth-1 : 0]                   B_15_reg;
+reg     [DataWidth-1 : 0]                   b0_out_reg ;
+reg     [DataWidth-1 : 0]                   b1_out_reg ;
+reg     [DataWidth-1 : 0]                   b2_out_reg ;
+reg     [DataWidth-1 : 0]                   b3_out_reg ;
+reg     [DataWidth-1 : 0]                   b4_out_reg ;
+reg     [DataWidth-1 : 0]                   b5_out_reg ;
+reg     [DataWidth-1 : 0]                   b6_out_reg ;
+reg     [DataWidth-1 : 0]                   b7_out_reg ;
+
+
+
+reg     [DataWidth-1 : 0]                   r0_in ;
+reg     [DataWidth-1 : 0]                   r1_in ;
+reg     [DataWidth-1 : 0]                   r2_in ;
+reg     [DataWidth-1 : 0]                   r3_in ;
+
+
+
+wire    [ResultWidth-1 : 0]                   P_0    ;
+wire    [ResultWidth-1 : 0]                   P_1    ;
+wire    [ResultWidth-1 : 0]                   P_2    ;
+wire    [ResultWidth-1 : 0]                   P_3    ;
+wire    [ResultWidth-1 : 0]                   P_4    ;
+wire    [ResultWidth-1 : 0]                   P_5    ;
+wire    [ResultWidth-1 : 0]                   P_6    ;
+wire    [ResultWidth-1 : 0]                   P_7    ;
+wire    [ResultWidth-1 : 0]                   P_8    ;
+wire    [ResultWidth-1 : 0]                   P_9    ;
+wire    [ResultWidth-1 : 0]                   P_10    ;
+wire    [ResultWidth-1 : 0]                   P_11    ;
+wire    [ResultWidth-1 : 0]                   P_12    ;
+wire    [ResultWidth-1 : 0]                   P_13    ;
+wire    [ResultWidth-1 : 0]                   P_14    ;
+wire    [ResultWidth-1 : 0]                   P_15    ;
+
+
+
+wire    [ResultWidth-1 : 0]                   S0    ;
+wire    [ResultWidth-1 : 0]                   S1    ;
+wire    [ResultWidth-1 : 0]                   S2    ;
+wire    [ResultWidth-1 : 0]                   S3    ;
+wire    [ResultWidth-1 : 0]                   S4    ;
+wire    [ResultWidth-1 : 0]                   S5    ;
+wire    [ResultWidth-1 : 0]                   S6    ;
+wire    [ResultWidth-1 : 0]                   S7    ;
+wire    [ResultWidth-1 : 0]                   S8    ;
+wire    [ResultWidth-1 : 0]                   S9    ;
+wire    [ResultWidth-1 : 0]                   S10    ;
+wire    [ResultWidth-1 : 0]                   S11    ;
+wire    [ResultWidth-1 : 0]                   S12    ;
+wire    [ResultWidth-1 : 0]                   S13    ;
+
+
+
+assign b_out[DataWidth*(0+1)-1:DataWidth*0] = b0_out_reg;
+assign b_out[DataWidth*(1+1)-1:DataWidth*1] = b1_out_reg;
+assign b_out[DataWidth*(2+1)-1:DataWidth*2] = b2_out_reg;
+assign b_out[DataWidth*(3+1)-1:DataWidth*3] = b3_out_reg;
+assign b_out[DataWidth*(4+1)-1:DataWidth*4] = b4_out_reg;
+assign b_out[DataWidth*(5+1)-1:DataWidth*5] = b5_out_reg;
+assign b_out[DataWidth*(6+1)-1:DataWidth*6] = b6_out_reg;
+assign b_out[DataWidth*(7+1)-1:DataWidth*7] = b7_out_reg;
+
+
+
+assign pattern_reg = selector? pattern_reg1 : pattern_reg0  ;
+assign value0_reg = selector ? value0_reg1 : value0_reg0;
+assign value1_reg = selector ? value1_reg1 : value1_reg0;
+assign value2_reg = selector ? value2_reg1 : value2_reg0;
+assign value3_reg = selector ? value3_reg1 : value3_reg0;
+assign value4_reg = selector ? value4_reg1 : value4_reg0;
+assign value5_reg = selector ? value5_reg1 : value5_reg0;
+assign value6_reg = selector ? value6_reg1 : value6_reg0;
+assign value7_reg = selector ? value7_reg1 : value7_reg0;
+assign value8_reg = selector ? value8_reg1 : value8_reg0;
+assign value9_reg = selector ? value9_reg1 : value9_reg0;
+assign value10_reg = selector ? value10_reg1 : value10_reg0;
+assign value11_reg = selector ? value11_reg1 : value11_reg0;
+assign value12_reg = selector ? value12_reg1 : value12_reg0;
+assign value13_reg = selector ? value13_reg1 : value13_reg0;
+assign value14_reg = selector ? value14_reg1 : value14_reg0;
+assign value15_reg = selector ? value15_reg1 : value15_reg0;
+
+
+
+always @(posedge clk or negedge rst_n) begin
+    if(!rst_n) begin
+        b0_out_reg          <= 0                        ;
+        b1_out_reg          <= 0                        ;
+        b2_out_reg          <= 0                        ;
+        b3_out_reg          <= 0                        ;
+        b4_out_reg          <= 0                        ;
+        b5_out_reg          <= 0                        ;
+        b6_out_reg          <= 0                        ;
+        b7_out_reg          <= 0                        ;
+
+        pattern_reg0        <= 0                        ;
+        value0_reg0         <= 0                        ;
+        value1_reg0         <= 0                        ;
+        value2_reg0         <= 0                        ;
+        value3_reg0         <= 0                        ;
+        value4_reg0         <= 0                        ;
+        value5_reg0         <= 0                        ;
+        value6_reg0         <= 0                        ;
+        value7_reg0         <= 0                        ;
+        value8_reg0         <= 0                        ;
+        value9_reg0         <= 0                        ;
+        value10_reg0         <= 0                        ;
+        value11_reg0         <= 0                        ;
+        value12_reg0         <= 0                        ;
+        value13_reg0         <= 0                        ;
+        value14_reg0         <= 0                        ;
+        value15_reg0         <= 0                        ;
+
+        pattern_reg1        <= 0                        ;
+        value0_reg1         <= 0                        ;
+        value1_reg1         <= 0                        ;
+        value2_reg1         <= 0                        ;
+        value3_reg1         <= 0                        ;
+        value4_reg1         <= 0                        ;
+        value5_reg1         <= 0                        ;
+        value6_reg1         <= 0                        ;
+        value7_reg1         <= 0                        ;
+        value8_reg1         <= 0                        ;
+        value9_reg1         <= 0                        ;
+        value10_reg1         <= 0                        ;
+        value11_reg1         <= 0                        ;
+        value12_reg1         <= 0                        ;
+        value13_reg1         <= 0                        ;
+        value14_reg1         <= 0                        ;
+        value15_reg1         <= 0                        ;
+end
+    else begin
+			if (en)  begin
+            b0_out_reg          <= b[DataWidth*(0+1)-1 :DataWidth*0]                       ;
+            b1_out_reg          <= b[DataWidth*(1+1)-1 :DataWidth*1]                       ;
+            b2_out_reg          <= b[DataWidth*(2+1)-1 :DataWidth*2]                       ;
+            b3_out_reg          <= b[DataWidth*(3+1)-1 :DataWidth*3]                       ;
+            b4_out_reg          <= b[DataWidth*(4+1)-1 :DataWidth*4]                       ;
+            b5_out_reg          <= b[DataWidth*(5+1)-1 :DataWidth*5]                       ;
+            b6_out_reg          <= b[DataWidth*(6+1)-1 :DataWidth*6]                       ;
+            b7_out_reg          <= b[DataWidth*(7+1)-1 :DataWidth*7]                       ;
+            if (selector) begin
+                if (w_en) begin
+                    pattern_reg0    <= pattern  ;
+                    value0_reg0     <= value[DataWidth*(0+1)-1 :DataWidth*0]                ;
+                    value1_reg0     <= value[DataWidth*(1+1)-1 :DataWidth*1]                ;
+                    value2_reg0     <= value[DataWidth*(2+1)-1 :DataWidth*2]                ;
+                    value3_reg0     <= value[DataWidth*(3+1)-1 :DataWidth*3]                ;
+                    value4_reg0     <= value[DataWidth*(4+1)-1 :DataWidth*4]                ;
+                    value5_reg0     <= value[DataWidth*(5+1)-1 :DataWidth*5]                ;
+                    value6_reg0     <= value[DataWidth*(6+1)-1 :DataWidth*6]                ;
+                    value7_reg0     <= value[DataWidth*(7+1)-1 :DataWidth*7]                ;
+                    value8_reg0     <= value[DataWidth*(8+1)-1 :DataWidth*8]                ;
+                    value9_reg0     <= value[DataWidth*(9+1)-1 :DataWidth*9]                ;
+                    value10_reg0     <= value[DataWidth*(10+1)-1 :DataWidth*10]                ;
+                    value11_reg0     <= value[DataWidth*(11+1)-1 :DataWidth*11]                ;
+                    value12_reg0     <= value[DataWidth*(12+1)-1 :DataWidth*12]                ;
+                    value13_reg0     <= value[DataWidth*(13+1)-1 :DataWidth*13]                ;
+                    value14_reg0     <= value[DataWidth*(14+1)-1 :DataWidth*14]                ;
+                    value15_reg0     <= value[DataWidth*(15+1)-1 :DataWidth*15]                ;
+                end
+			end
+	else begin
+			if (w_en) begin
+				pattern_reg1 <= pattern;
+                    value0_reg1     <= value[DataWidth*(0+1)-1 : DataWidth*0]     ;
+                    value1_reg1     <= value[DataWidth*(1+1)-1 : DataWidth*1]     ;
+                    value2_reg1     <= value[DataWidth*(2+1)-1 : DataWidth*2]     ;
+                    value3_reg1     <= value[DataWidth*(3+1)-1 : DataWidth*3]     ;
+                    value4_reg1     <= value[DataWidth*(4+1)-1 : DataWidth*4]     ;
+                    value5_reg1     <= value[DataWidth*(5+1)-1 : DataWidth*5]     ;
+                    value6_reg1     <= value[DataWidth*(6+1)-1 : DataWidth*6]     ;
+                    value7_reg1     <= value[DataWidth*(7+1)-1 : DataWidth*7]     ;
+                    value8_reg1     <= value[DataWidth*(8+1)-1 : DataWidth*8]     ;
+                    value9_reg1     <= value[DataWidth*(9+1)-1 : DataWidth*9]     ;
+                    value10_reg1     <= value[DataWidth*(10+1)-1 : DataWidth*10]     ;
+                    value11_reg1     <= value[DataWidth*(11+1)-1 : DataWidth*11]     ;
+                    value12_reg1     <= value[DataWidth*(12+1)-1 : DataWidth*12]     ;
+                    value13_reg1     <= value[DataWidth*(13+1)-1 : DataWidth*13]     ;
+                    value14_reg1     <= value[DataWidth*(14+1)-1 : DataWidth*14]     ;
+                    value15_reg1     <= value[DataWidth*(15+1)-1 : DataWidth*15]     ;
+
+
+
+                end
+			end
+			case(pattern_reg)
+  			16'd1: begin			
+                A_0_reg          <= value0_reg;
+                A_1_reg          <= value1_reg;
+                A_2_reg          <= value2_reg;
+                A_3_reg          <= value3_reg;
+                A_4_reg          <= value4_reg;
+                A_5_reg          <= value5_reg;
+                A_6_reg          <= value6_reg;
+                A_7_reg          <= value7_reg;
+                A_8_reg          <= value8_reg;
+                A_9_reg          <= value9_reg;
+                A_10_reg          <= value10_reg;
+                A_11_reg          <= value11_reg;
+                A_12_reg          <= value12_reg;
+                A_13_reg          <= value13_reg;
+                A_14_reg          <= value14_reg;
+                A_15_reg          <= value15_reg;
+        B_0_reg          <= b[0]                    ;
+        B_1_reg          <= b[1]                    ;
+        B_2_reg          <= b[2]                    ;
+        B_3_reg          <= b[3]                    ;
+        B_4_reg          <= b[4]                    ;
+        B_5_reg          <= b[5]                    ;
+        B_6_reg          <= b[6]                    ;
+        B_7_reg          <= b[7]                    ;
+        B_8_reg          <= b[0]                    ;
+        B_9_reg          <= b[1]                    ;
+        B_10_reg          <= b[2]                    ;
+        B_11_reg          <= b[3]                    ;
+        B_12_reg          <= b[4]                    ;
+        B_13_reg          <= b[5]                    ;
+        B_14_reg          <= b[6]                    ;
+        B_15_reg          <= b[7]                    ;
+    end
+    2: begin
+    end
+    endcase
+end
+end
+end
+mult_gen_0 mult_0(
+    .CLK            (clk)                           ,
+    .A              (A_0_reg)                       ,
+    .B              (B_0_reg)                       ,
+    .P              (P_0)
+);
+ mult_gen_0 mult_1(
+    .CLK            (clk)                           ,
+    .A              (A_1_reg)                       ,
+    .B              (B_1_reg)                       ,
+    .P              (P_1)
+);
+ mult_gen_0 mult_2(
+    .CLK            (clk)                           ,
+    .A              (A_2_reg)                       ,
+    .B              (B_2_reg)                       ,
+    .P              (P_2)
+);
+ mult_gen_0 mult_3(
+    .CLK            (clk)                           ,
+    .A              (A_3_reg)                       ,
+    .B              (B_3_reg)                       ,
+    .P              (P_3)
+);
+ mult_gen_0 mult_4(
+    .CLK            (clk)                           ,
+    .A              (A_4_reg)                       ,
+    .B              (B_4_reg)                       ,
+    .P              (P_4)
+);
+ mult_gen_0 mult_5(
+    .CLK            (clk)                           ,
+    .A              (A_5_reg)                       ,
+    .B              (B_5_reg)                       ,
+    .P              (P_5)
+);
+ mult_gen_0 mult_6(
+    .CLK            (clk)                           ,
+    .A              (A_6_reg)                       ,
+    .B              (B_6_reg)                       ,
+    .P              (P_6)
+);
+ mult_gen_0 mult_7(
+    .CLK            (clk)                           ,
+    .A              (A_7_reg)                       ,
+    .B              (B_7_reg)                       ,
+    .P              (P_7)
+);
+ mult_gen_0 mult_8(
+    .CLK            (clk)                           ,
+    .A              (A_8_reg)                       ,
+    .B              (B_8_reg)                       ,
+    .P              (P_8)
+);
+ mult_gen_0 mult_9(
+    .CLK            (clk)                           ,
+    .A              (A_9_reg)                       ,
+    .B              (B_9_reg)                       ,
+    .P              (P_9)
+);
+ mult_gen_0 mult_10(
+    .CLK            (clk)                           ,
+    .A              (A_10_reg)                       ,
+    .B              (B_10_reg)                       ,
+    .P              (P_10)
+);
+ mult_gen_0 mult_11(
+    .CLK            (clk)                           ,
+    .A              (A_11_reg)                       ,
+    .B              (B_11_reg)                       ,
+    .P              (P_11)
+);
+ mult_gen_0 mult_12(
+    .CLK            (clk)                           ,
+    .A              (A_12_reg)                       ,
+    .B              (B_12_reg)                       ,
+    .P              (P_12)
+);
+ mult_gen_0 mult_13(
+    .CLK            (clk)                           ,
+    .A              (A_13_reg)                       ,
+    .B              (B_13_reg)                       ,
+    .P              (P_13)
+);
+ mult_gen_0 mult_14(
+    .CLK            (clk)                           ,
+    .A              (A_14_reg)                       ,
+    .B              (B_14_reg)                       ,
+    .P              (P_14)
+);
+ mult_gen_0 mult_15(
+    .CLK            (clk)                           ,
+    .A              (A_15_reg)                       ,
+    .B              (B_15_reg)                       ,
+    .P              (P_15)
+);
+ 
+c_addsub_0 adder0(
+				.A(P_0),
+				.B(P_1),
+				.CLK(clk),
+				.CE(1),
+				.S(S0)
+			);
+
+ c_addsub_0 adder1(
+				.A(P_2),
+				.B(P_3),
+				.CLK(clk),
+				.CE(1),
+				.S(S1)
+			);
+
+ c_addsub_0 adder2(
+				.A(P_4),
+				.B(P_5),
+				.CLK(clk),
+				.CE(1),
+				.S(S2)
+			);
+
+ c_addsub_0 adder3(
+				.A(P_6),
+				.B(P_7),
+				.CLK(clk),
+				.CE(1),
+				.S(S3)
+			);
+
+ c_addsub_0 adder4(
+				.A(P_8),
+				.B(P_9),
+				.CLK(clk),
+				.CE(1),
+				.S(S4)
+			);
+
+ c_addsub_0 adder5(
+				.A(P_10),
+				.B(P_11),
+				.CLK(clk),
+				.CE(1),
+				.S(S5)
+			);
+
+ c_addsub_0 adder6(
+				.A(P_12),
+				.B(P_13),
+				.CLK(clk),
+				.CE(1),
+				.S(S6)
+			);
+
+ c_addsub_0 adder7(
+				.A(P_14),
+				.B(P_15),
+				.CLK(clk),
+				.CE(1),
+				.S(S7)
+			);
+
+ 
+c_addsub_0 adder_two0(
+				.A(S0),
+				.B(S1),
+				.CLK(clk),
+				.CE(1),
+				.S(S8)
+			);
+
+ c_addsub_0 adder_two1(
+				.A(S2),
+				.B(S3),
+				.CLK(clk),
+				.CE(1),
+				.S(S9)
+			);
+
+ c_addsub_0 adder_two2(
+				.A(S4),
+				.B(S5),
+				.CLK(clk),
+				.CE(1),
+				.S(S10)
+			);
+
+ c_addsub_0 adder_two3(
+				.A(S6),
+				.B(S7),
+				.CLK(clk),
+				.CE(1),
+				.S(S11)
+			);
+
+ c_addsub_0 adder_three0(
+				.A(S8),
+				.B(S9),
+				.CLK(clk),
+				.CE(1),
+				.S(S12)
+			);
+
+ c_addsub_0 adder_three1(
+				.A(S10),
+				.B(S11),
+				.CLK(clk),
+				.CE(1),
+				.S(S13)
+			);
+
+ c_addsub_0 adder_out0(
+				.A(S12),
+				.B(r_in[ResultWidth*(0+1)-1:ResultWidth*0]),
+				.CLK(clk),
+				.CE(1),
+				.S(r_out[ResultWidth*(0+1)-1:ResultWidth*0])
+			);
+
+ c_addsub_0 adder_out1(
+				.A(S13),
+				.B(r_in[ResultWidth*(1+1)-1:ResultWidth*1]),
+				.CLK(clk),
+				.CE(1),
+				.S(r_out[ResultWidth*(1+1)-1:ResultWidth*1])
+			);
+
+ c_addsub_0 adder_out2(
+				.A(S14),
+				.B(r_in[ResultWidth*(2+1)-1:ResultWidth*2]),
+				.CLK(clk),
+				.CE(1),
+				.S(r_out[ResultWidth*(2+1)-1:ResultWidth*2])
+			);
+
+ c_addsub_0 adder_out3(
+				.A(S15),
+				.B(r_in[ResultWidth*(3+1)-1:ResultWidth*3]),
+				.CLK(clk),
+				.CE(1),
+				.S(r_out[ResultWidth*(3+1)-1:ResultWidth*3])
+			);
+
+ assign pattern_below    =   (selector)?     pattern_reg0    :pattern_reg1       ;
+assign value_below[(0+1)*DataWidth-1:(0)*DataWidth]   =   (selector)?     value0_reg0     :value0_reg1        ;
+assign value_below[(1+1)*DataWidth-1:(1)*DataWidth]   =   (selector)?     value1_reg0     :value1_reg1        ;
+assign value_below[(2+1)*DataWidth-1:(2)*DataWidth]   =   (selector)?     value2_reg0     :value2_reg1        ;
+assign value_below[(3+1)*DataWidth-1:(3)*DataWidth]   =   (selector)?     value3_reg0     :value3_reg1        ;
+assign value_below[(4+1)*DataWidth-1:(4)*DataWidth]   =   (selector)?     value4_reg0     :value4_reg1        ;
+assign value_below[(5+1)*DataWidth-1:(5)*DataWidth]   =   (selector)?     value5_reg0     :value5_reg1        ;
+assign value_below[(6+1)*DataWidth-1:(6)*DataWidth]   =   (selector)?     value6_reg0     :value6_reg1        ;
+assign value_below[(7+1)*DataWidth-1:(7)*DataWidth]   =   (selector)?     value7_reg0     :value7_reg1        ;
+assign value_below[(8+1)*DataWidth-1:(8)*DataWidth]   =   (selector)?     value8_reg0     :value8_reg1        ;
+assign value_below[(9+1)*DataWidth-1:(9)*DataWidth]   =   (selector)?     value9_reg0     :value9_reg1        ;
+assign value_below[(10+1)*DataWidth-1:(10)*DataWidth]   =   (selector)?     value10_reg0     :value10_reg1        ;
+assign value_below[(11+1)*DataWidth-1:(11)*DataWidth]   =   (selector)?     value11_reg0     :value11_reg1        ;
+assign value_below[(12+1)*DataWidth-1:(12)*DataWidth]   =   (selector)?     value12_reg0     :value12_reg1        ;
+assign value_below[(13+1)*DataWidth-1:(13)*DataWidth]   =   (selector)?     value13_reg0     :value13_reg1        ;
+assign value_below[(14+1)*DataWidth-1:(14)*DataWidth]   =   (selector)?     value14_reg0     :value14_reg1        ;
+assign value_below[(15+1)*DataWidth-1:(15)*DataWidth]   =   (selector)?     value15_reg0     :value15_reg1        ;
+endmodule
